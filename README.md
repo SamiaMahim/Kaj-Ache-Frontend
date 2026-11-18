@@ -4,6 +4,8 @@
 
 This repository is the **web client**: the public landing site plus full customer and technician dashboards, built as a single-page React app on top of a REST backend shared with the mobile app.
 
+![Kaj Ache landing page](docs/screenshots/home.png)
+
 ---
 
 ## Highlights
@@ -142,18 +144,11 @@ The backend is REST-only, so the app uses **targeted, visibility-aware polling**
 npm install
 ```
 
-Create `.env` in the project root:
-
-```env
-VITE_API_URL=http://localhost:3000        # backend origin
-VITE_MOBILE_APP_URL=https://play.google.com/store/apps/details?id=...
-```
-
 ### Scripts
 
 | Command | Purpose |
 | --- | --- |
-| `npm run dev` | Start dev server on `http://localhost:5174` (proxies `/api` and `/uploads` to `VITE_API_URL`) |
+| `npm run dev` | Start dev server on `http://localhost:5174` (proxies `/api` and `/uploads` to the backend) |
 | `npm run build` | Production build into `dist/` |
 | `npm run preview` | Serve the production build locally |
 | `npm run lint` | Run ESLint |
@@ -173,7 +168,3 @@ VITE_MOBILE_APP_URL=https://play.google.com/store/apps/details?id=...
 ## Screenshots
 
 <!-- Add screenshots, e.g. ![Home](docs/screenshots/home.png) -->
-
-| Landing page | Customer dashboard | Live tracking |
-| --- | --- | --- |
-| _add image_ | _add image_ | _add image_ |
